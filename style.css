@@ -1,0 +1,384 @@
+/*font links*/
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/*general css*/
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #F5F5DC;
+}
+.scroll-offset {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+/*navbar css*/
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1px 0;
+    z-index: 1000;
+    overflow: hidden;
+    /* background-color: rgba(60, 60, 60, 0.60);  Transparent background */
+}
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: #8B1A1A;
+    transition: color 0.3s ease-in-out;
+}
+.nav-item{
+    font-family: Ga Maamli;
+}
+
+/*hero section css*/
+.hero-section {
+    height: 750px;
+    background-image: url('img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.h1 {
+    font-family: Satisfy;
+    font-size: 3em;
+}
+.h5 {
+    font-family: Ga Maamli;
+    font-size: 1.5em;
+}
+
+/*about section css*/
+.about-section {
+    padding: 50px 20px;
+}
+.about-p {
+    font-family: Courgette;
+    align-items: center;
+    justify-content: center;
+}
+
+/*destinations css*/
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 66.66%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box;
+}
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.image-container:hover img {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+.image-container:hover p{
+    font-family: Bangers;
+}
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+/*activities css*/
+.activity-section {
+    padding: 50px 20px;
+}
+.section-title {
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 30px;
+}
+.activity-row {
+    margin-bottom: 20px;
+}
+.activity-row .h6 {
+    font-family: 'Ga Maamli', serif;
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.activity-row ul {
+    list-style-type: none;
+    padding: 0;
+}
+.activity-row ul li {
+    font-family: 'Courgette', cursive;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+/* Food section styling */
+.food-section {
+    padding: 50px 20px;
+}
+.food-container {   /* Card container styling */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 20px;
+}
+.card {    /* Card styling */
+    background-color: #FFF;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 40px); /* Default to 3 cards per row */
+    box-sizing: border-box;
+}
+.card:hover {    /* Card hover effect */
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.card-img-top {    /* Card image styling */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-text {    /* Card text styling */
+    text-align: center;
+    font-family: Courgette, cursive;
+}
+
+/*travel tips css*/
+.travel-tips-section {
+    padding: 50px 20px;
+}
+.travel-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.travel-h6{
+    font-family: Courgette;
+}
+
+/*fairs and festivals css*/
+.fairs-festivals-section {
+    padding: 50px 20px;
+}
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+.fair-h5 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: Great Vibes;
+    animation: fadeInDown 1s ease-in-out;
+}
+.fair-p {
+    font-family: Courgette;
+    color: white;
+    animation: fadeInUp 1s ease-in-out;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+/*footer css*/
+.footer {
+    background-color: #1a1a1a;
+    color: #e6e6e6;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+.footer p {
+    font-family: Courgette;
+    font-size: 1.2em;
+    margin: 0;
+}
+.footer-h3 {
+    font-family: Bangers;
+    text-align: center;
+}
+.contact-methods a {
+    color: inherit;
+    text-decoration: none;
+}
+.contact-methods a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 576px) {
+    .hero-section {
+        height: 400px;
+    }
+
+    .h1 {
+        font-size: 1.5em;
+    }
+
+    .h5 {
+        font-size: 1em;
+    }
+
+    .navbar {
+        padding: 5px 0;
+    }
+
+    .card {
+        flex: 1 1 calc(100% - 20px); /* 1 card per row */
+        margin-bottom: 20px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 500px;
+    }
+
+    .h1 {
+        font-size: 2em;
+    }
+
+    .h5 {
+        font-size: 1.2em;
+    }
+
+    .navbar {
+        padding: 5px 0;
+    }
+
+    .card {
+        flex: 1 1 calc(100% - 20px); /* 1 card per row */
+        margin-bottom: 20px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+        margin-bottom: 20px;
+    }
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .card {
+        flex: 1 1 calc(25% - 20px); /* 4 cards per row */
+        margin-bottom: 20px;
+    }
+}
+/* Add this to your existing CSS */
+
+/* General Navbar Styling */
+.navbar-toggler {
+    border: none;
+    font-size: 1.5em;
+}
+
+/* Ensure the toggle button is visible under 700px */
+@media (max-width: 700px) {
+    .navbar-collapse {
+        display: none; /* Hide the navbar content by default */
+    }
+
+    .navbar-toggler {
+        display: block; /* Show the toggler button */
+    }
+}
+
+@media (min-width: 701px) {
+    .navbar-collapse {
+        display: flex !important; /* Ensure the navbar content is visible above 700px */
+    }
+
+    .navbar-toggler {
+        display: none; /* Hide the toggler button */
+    }
+}
+
+/* Styling for the dropdown menu when the navbar is collapsed */
+@media (max-width: 700px) {
+    .navbar-collapse.collapsed {
+        display: block !important; /* Display the menu when toggled */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+/* CSS for scroll animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    opacity: 0;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.fade-in-up.animated {
+    animation: fadeInUp 1s forwards;
+}
